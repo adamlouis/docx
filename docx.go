@@ -84,6 +84,10 @@ func (d *Docx) SetContent(content string) {
 	d.content = content
 }
 
+func (d *Docx) GetLinks() string {
+	return d.links
+}
+
 func (d *Docx) ReplaceRaw(oldString string, newString string, num int) {
 	d.content = strings.Replace(d.content, oldString, newString, num)
 }
